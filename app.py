@@ -21,7 +21,7 @@ def predict():
    print(category)
 
     # Call the branch prediction function (from your existing back-end code)
-   predicted_branches = predict_course([rank, category], 2)  # Change '3' to the desired number of predictions
+   predicted_branches = predict_course([rank, category], 1)  # Change '3' to the desired number of predictions
    print(predicted_branches)
    return jsonify(predicted_branches)
 if __name__ == '__main__':
